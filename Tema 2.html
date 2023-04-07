@@ -1,0 +1,1182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) { 
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) { 
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ''; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>Tema 2</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='ejercicios-tema-2'><span>Ejercicios Tema 2</span></h1><h3 id='ejercicio-2'><span>Ejercicio 2</span></h3><table>
+    <tr style="background-color:#e5e7e9">
+        <td>
+<p style="background-color:#e5e7e9">Se tienen dos jarras vacías. Una tiene 4 litros de capacidad y otra tiene 3 litros de capacidad.
+Ninguna de las jarras tiene marcas de medición y no hay otro dispositivo de medida.
+Hay un grifo para llenar las jarras.<br><br>
+<strong style="color:blue" >¿Cómo podemos conseguir tener 2 litros de agua en la jarra de 4 litros?</strong><br></p> 
+		</td>	
+	</tr>  
+</table><p>&nbsp;</p><h4 id='1-resolver-el-problema-de-las-garrafas-mediante-el-método-de-búsqueda-en-amplitud-teniendo-en-cuenta-que-el-orden-de-selección-de-los-operadores-es'><span>1. Resolver el problema de las garrafas mediante el método de búsqueda en amplitud, teniendo en cuenta que el orden de selección de los operadores es:</span></h4><ul><li><p><span>Llenar grande.</span></p></li><li><p><span>Llenar pequeña.</span></p></li><li><p><span>Vaciar grande.</span></p></li><li><p><span>Vaciar pequeña.</span></p></li><li><p><span>Traspasar grande pequeña.</span></p></li><li><p><span>Traspasar pequeña grande.</span></p></li></ul><p><span>  </span><u><span>Suponer que cada vez que se genera un nodo, se elimina si en ese momento está en el árbol de búsqueda, es decir, si se detecta un ciclo.</span></u></p><p><span>  </span></p><p><span>  </span><img src="images/Ejercicio_2.1.png" referrerpolicy="no-referrer" alt="Ejercicio_2.1"></p><p>&nbsp;</p><h5 id='iteraciones-1'><span>Iteraciones</span></h5><p><strong><span>Lista abierta</span></strong><span> = LA</span>
+<strong><span>Lista cerrada</span></strong><span> = LC</span></p><ul><li><p><strong><span>Iteración 1</span></strong><span>:</span>
+<span>LA = (0,0)</span></p></li><li><p><strong><span>Iteración 2</span></strong><span>:</span>
+<span>LC = (0,0)</span>
+<span>LA = (4,0) (0,3)</span></p></li><li><p><strong><span>Iteración 3</span></strong><span>:</span>
+<span>LC = (0,0) (4,0)</span>
+<span>LA = (0,3) (4,3)  (0,0) (1,3)</span></p></li><li><p><strong><span>Iteración 4</span></strong><span>:</span>
+<span>LC = (0,0) (4,0) (0,3)</span>
+<span>LA = (4,3) (0,0) (1,3) (4,3) (0,0) (3,0)</span></p></li><li><p><strong><span>Iteración 5</span></strong><span>:</span>
+<span>LC = (0,0) (4,0) (0,3) (4,3)</span>
+<span>LA = (0,0) (1,3) (4,3) (0,0) (3,0) (0,3) (4,3)</span></p></li><li><p><strong><span>Iteración 6</span></strong><span>:</span>
+<span>LC = (0,0) (4,0) (0,3) (4,3) (1,3)</span>
+<span>LA = (4,3) (0,0) (3,0) (0,3) (4,3) (4,3) (0,3) (1,0) (4,0)</span></p></li><li><p><strong><span>... Iteración </span><em><span>n</span></em><span> ...</span></strong></p></li><li><p><strong><span>Iteración xx</span></strong><span>:</span>
+<span>LC = (0,0) (4,0) (0,3) (4,3) (1,3) (3,0) (1,0) (3,3) (0,1) (4,2) (4,1)</span>
+<span>LA = (0,3) (0,0) (1,0) (4,3) (0,2) (4,0) (3,3) (4,3) (0,1) (4,0) </span><strong><span>(2,3)</span></strong></p></li></ul><p>&nbsp;</p><h4 id='2-¿puedes-garantizar-que-la-solución-encontrada-anteriormente-es-óptima'><span>2. ¿Puedes garantizar que la solución encontrada anteriormente es óptima?</span></h4><p><strong><span>Optimalidad</span></strong><span>: el algoritmo garantiza que la solución devuelta es óptima, es decir, es una solución de coste mínimo entre el conjunto total de soluciones.</span></p><p><span>La solución es óptima, ya que la búsqueda en amplitud en problemas de costes uniforme es admisible. Nótese que anteriormente se ha dicho que la solución generada estaba en una profundidad de 6, que se igualaba al coste de la solución. Cualquier otra solución que se pudiera encontrar estaría en ese mismo nivel de profundidad (por tanto, con un mismo coste), o en un nivel de profundidad mayor (con un coste mayor).</span></p><p>&nbsp;</p><h4 id='3-¿podrías-encontrar-una-solución-con-el-algoritmo-de-búsqueda-en-profundidad-para-una-una-profundidad-máxima-de-4-en-caso-afirmativo-¿te-garantizaría-la-búsqueda-en-profundidad-que-la-solución-sea-óptima'><span>3. ¿Podrías encontrar una solución con el algoritmo de búsqueda en profundidad, para una una profundidad máxima de 4? En caso afirmativo, ¿te garantizaría la búsqueda en profundidad que la solución sea óptima?</span></h4><p><span>No, pues con una profundidad máxima de 4, no se puede encontrar una solución, ya que el coste de la solución es 6 y, por tanto, la mínima profundidad a la que se encontraría la solución sería 6.</span></p><p>&nbsp;</p><h4 id='4-¿podrías--encontrar-una-solución-con-el-algoritmo-de-búsqueda-en-profundidad-para-una-una-profundidad-máxima-de-6-en-caso-afirmativo-¿te-garantizaría-la-búsqueda-en-profundidad-que-la-solución-sea-óptima'><span>4. ¿Podrías  encontrar una solución con el algoritmo de búsqueda en profundidad, para una una profundidad máxima de 6? En caso afirmativo, ¿te garantizaría la búsqueda en profundidad que la solución sea óptima?</span></h4><p><span>Si, pues con una profundidad máxima de 6 sí se encontraría la solución. Sin embargo, el algoritmo de búsqueda en profundidad no es admisible, por lo que no garantizaría que la solución encontrada fuese óptima, a pesar de que en este caso sabemos que sí lo sería.</span></p><p>&nbsp;</p><h4 id='5-¿podrías--encontrar-una-solución-con-el-algoritmo-de-búsqueda-en-profundidad-para-una-una-profundidad-máxima-de-8-en-caso-afirmativo-¿te-garantizaría-la-búsqueda-en-profundidad-que-la-solución-sea-óptima'><span>5. ¿Podrías  encontrar una solución con el algoritmo de búsqueda en profundidad, para una una profundidad máxima de 8? En caso afirmativo, ¿te garantizaría la búsqueda en profundidad que la solución sea óptima?</span></h4><p><span>Si, pues con una profundidad máxima de 8 también se encontraría una solución, que podría tener un coste de 6, 7 u 8. Nuevamente no se garantizaría que fuese óptima.</span></p><p>&nbsp;</p><h4 id='6-¿podrías--encontrar-una-solución-con-el-algoritmo-de-búsqueda-en-profundidad-iterativa-para-una-una-profundidad-máxima-inicial-de-2-y-un-incremento-de-profundidad-de-3-en-caso-afirmativo-¿te-garantizaría-la-búsqueda-en-profundidad-que-la-solución-sea-óptima-en-caso-de-no-asegurar-optimalidad-¿puedes-estimar-en-qué-coste-ha-sido-excedido-el-óptimo'><span>6. ¿Podrías  encontrar una solución con el algoritmo de búsqueda en profundidad iterativa, para una una profundidad máxima inicial de 2, y un incremento de profundidad de 3? En caso afirmativo, ¿te garantizaría la búsqueda en profundidad que la solución sea óptima? En caso de no asegurar optimalidad, ¿puedes estimar en qué coste ha sido excedido el óptimo?</span></h4><p><span>El algoritmo encontraría una solución en su tercera iteración, con una profundidad máxima de 8.</span></p><p><span>El algoritmo de búsqueda en profundidad iterativa es un algoritmo completo y óptimo cuando la profundidad máxima inicial es 1, y el incremento de profundidad en cada iteración es también 1, por lo que no estaría garantizado que la solución encontrada fuese óptima.</span></p><p><span>Ha excedido en un coste de 1 el óptimo.</span></p><p>&nbsp;</p><h3 id='ejercicio-4'><span>Ejercicio 4</span></h3><h4 id='dado-el-árbol-de-la-figura-2-donde-b-y-l-son-los-2-únicos-nodos-meta-y-a-es-el-nodo-inicial-indica-en-qué-orden-se-visitarían-los-nodos-distinguiendo-nodos-generados-de-nodos-expandidos-para-los-siguientes-algoritmos'><span>Dado el árbol de la figura 2 donde B y L son los 2 únicos nodos meta y A es el nodo inicial. Indica en qué orden se visitarían los nodos, distinguiendo nodos generados de nodos expandidos, para los siguientes algoritmos:</span></h4><p>&nbsp;</p><p><img src="images/Ejercicio_4.png" referrerpolicy="no-referrer" alt="Ejercicio_4"></p><p>&nbsp;</p><h4 id='1-amplitud'><span>1. Amplitud</span></h4><h5 id='iteraciones-2'><span>Iteraciones</span></h5><p><strong><span>Lista abierta</span></strong><span> = LA</span>
+<strong><span>Lista cerrada</span></strong><span> = LC</span></p><ul><li><p><strong><span>Iteración 1</span></strong><span>:</span>
+<span>LA = A</span></p></li><li><p><strong><span>Iteración 2</span></strong><span>:</span>
+<span>LC = A</span>
+<span>LA = D, F, G</span></p></li><li><p><strong><span>Iteración 3</span></strong><span>:</span>
+<span>LC = A, D</span>
+<span>LA = F, G, J, H</span></p></li><li><p><strong><span>Iteración 4</span></strong><span>:</span>
+<span>LC = A, D, F</span>
+<span>LA = G, J, H, C, E</span></p></li><li><p><strong><span>Iteración 5</span></strong><span>:</span>
+<span>LC = A, D, F, G</span>
+<span>LA = J, H, C, E</span></p></li><li><p><strong><span>Iteración 6</span></strong><span>:</span>
+<span>LC = A, D, F, G, J</span>
+<span>LA = H, C, E, K</span></p></li><li><p><strong><span>Iteración 7</span></strong><span>:</span>
+<span>LC = A, D, F, G, J, H</span>
+<span>LA = C, E, K, </span><strong><span>B</span></strong></p></li></ul><p>&nbsp;</p><h4 id='2-profundidad'><span>2. Profundidad</span></h4><h5 id='iteraciones-3'><span>Iteraciones</span></h5><p><strong><span>Lista abierta</span></strong><span> = LA</span>
+<strong><span>Camino Actual</span></strong><span> = CA</span></p><ul><li><p><strong><span>Iteración 1</span></strong><span>:</span>
+<span>LA = A</span></p></li><li><p><strong><span>Iteración 2</span></strong><span>:</span>
+<span>CA = A</span>
+<span>LA = D, F, G</span></p></li><li><p><strong><span>Iteración 3</span></strong><span>:</span>
+<span>CA = A, D</span>
+<span>LA = J, H, F, G</span></p></li><li><p><strong><span>Iteración 4</span></strong><span>:</span>
+<span>CA = A, D, J</span>
+<span>LA = K, H, F, G</span></p></li><li><p><strong><span>Iteración 5</span></strong><span>:</span>
+<span>CA = A, D, J, K</span>
+<span>LA = </span><strong><span>L</span></strong><span>, H, F, G</span></p></li></ul><p>&nbsp;</p><h4 id='3-mejor-primero-tomando-como-el-mejor-nodo-en-cada-ramificación-aquel-con-menor-orden-alfabético'><span>3. Mejor primero, tomando como el mejor nodo en cada ramificación aquel con menor orden alfabético</span></h4><h5 id='iteraciones-4'><span>Iteraciones</span></h5><p><strong><span>Lista abierta</span></strong><span> = LA</span>
+<strong><span>Lista cerrada</span></strong><span> = LC</span></p><ul><li><p><strong><span>Iteración 1</span></strong><span>:</span>
+<span>LA = A</span></p></li><li><p><strong><span>Iteración 2</span></strong><span>:</span>
+<span>LC = A</span>
+<span>LA = D, F, G</span></p></li><li><p><strong><span>Iteración 3</span></strong><span>:</span>
+<span>LC = A, D</span>
+<span>LA = F, G, J, H</span></p></li><li><p><strong><span>Iteración 4</span></strong><span>:</span>
+<span>LC = A, D, F</span>
+<span>LA = G, J, H, C, E</span></p></li><li><p><strong><span>Iteración 5</span></strong><span>:</span>
+<span>LC = A, D, F, G</span>
+<span>LA = J, H, C, E</span></p></li><li><p><strong><span>Iteración 6</span></strong><span>:</span>
+<span>LC = A, D, F, G, J</span>
+<span>LA = H, C, E, K</span></p></li><li><p><strong><span>Iteración 7</span></strong><span>:</span>
+<span>LC = A, D, F, G, J, H</span>
+<span>LA = C, E, K, </span><strong><span>B</span></strong></p></li></ul><p>&nbsp;</p><h3 id='ejercicio-5'><span>Ejercicio 5</span></h3><h4 id='se-quiere-determinar-el-camino-de-movimientos-que-hacen-falta-para-llegar-desde-el-estado-inicial-del-puzzle-8-hasta-el-estado-final-mostrado-en-la-imagen-utilizando-para-ello-el-algoritmo-a'><span>Se quiere determinar el camino de movimientos que hacen falta para llegar desde el estado inicial del Puzzle-8 hasta el estado final mostrado en la imagen, utilizando para ello el algoritmo A*.</span></h4><p>&nbsp;</p><p><img src="images/Ejemplo_Puzzle_8.png" referrerpolicy="no-referrer" alt="Ejemplo_Puzzle_8"></p><p>&nbsp;</p><ul><li><p><span>Función de evaluacion: </span><em><strong><span>f(s)</span></strong><span> = g(s) + h(s)</span></em></p></li><li><p><strong><span>Heurística</span></strong><span>:  el número de fichas mal colocadas.</span></p></li><li><p><span>El coste de cada movimiento es 1.</span></p></li></ul><p>&nbsp;</p><h5 id='solución-1'><span>Solución</span></h5><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 1</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Puzzle_8-1.png" width="15%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>  
+  	<tr>
+  	 <td><strong>LC</strong> =</br></br>
+  			<strong>LA</strong> = (S1-4)</td>
+      <td>g(S1) = 0</br>
+  			h(S1) = 4</br>
+			<strong>f(S1) = g(S1) + h(S1) = 4</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 2</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Puzzle_8-2.png" width="80%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+    <tr>
+  	<td><strong>LC</strong> = (S1-4)</br></br>
+  			<strong>LA</strong> = (S3-4) (S2-6) (S4-6)</td>	
+		<td>g(S2) = 1</br>
+  			h(S2) = 5</br>
+			<strong>f(S2) = g(S2) + h(S2) = 6</strong></br></br>
+			g(S3) = 1</br>
+  			h(S3) = 3</br>
+			<strong>f(S3) = g(S3) + h(S3) = 4</strong></br></br>
+			g(S4) = 1</br>
+  			h(S4) = 5</br>
+			<strong>f(S4) = g(S4) + h(S4) = 6</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 3</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Puzzle_8-3.png" width="80%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+    <tr>
+  	<td><strong>LC</strong> = (S1-4) (S3-4)</br></br>
+  			<strong>LA</strong> = (S5-5) (S6-5) (S2-6) (S4-6) (S7-6)</td>	
+		<td>g(S5) = 2</br>
+  			h(S5) = 3</br>
+			<strong>f(S5) = g(S5) + h(S5) = 5</strong></br></br>
+			g(S6) = 2</br>
+  			h(S6) = 3</br>
+			<strong>f(S6) = g(S6) + h(S6) = 5</strong></br></br>
+			g(S7) = 2</br>
+  			h(S7) = 4</br>
+			<strong>f(S7) = g(S7) + h(S7) = 6</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 4</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Puzzle_8-4.png" width="80%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+    <tr>
+  	<td><strong>LC</strong> = (S1-4) (S3-4) (S5-5)</br></br>
+  			<strong>LA</strong> = (S6-5) (S2-6) (S4-6) (S7-6) (S8-6) (S9-7)</td>
+		<td>g(S8) = 3</br>
+  			h(S8) = 3</br>
+			<strong>f(S8) = g(S8) + h(S8) = 6</strong></br></br>
+			g(S9) = 3</br>
+  			h(S9) = 3</br>
+			<strong>f(S9) = g(S9) + h(S9) = 7</strong></td>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 5</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Puzzle_8-5.png" width="80%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+    <tr>
+  	<td><strong>LC</strong> = (S1-4) (S3-4) (S5-5) (S6-5)</br></br>
+  			<strong>LA</strong> = (S10-6) (S2-6) (S4-6) (S7-6) (S8-6) (S9-7) (S11-7)</td>
+		<td>g(S10) = 3</br>
+  			h(S10) = 2</br>
+			<strong>f(S10) = g(S10) + h(S10) = 5</strong></br></br>
+			g(S11) = 3</br>
+  			h(S11) = 4</br>
+			<strong>f(S11) = g(S11) + h(S11) = 7</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 6</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Puzzle_8-6.png" width="80%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+    <tr>
+  	<td><strong>LC</strong> = (S1-4) (S3-4) (S5-5) (S6-5) (S10-6)</br></br>
+  			<strong>LA</strong> = (S12-5) (S2-6) (S4-6) (S7-6) (S8-6) (S9-7) (S11-7)</td>
+		<td>g(S12) = 4</br>
+  			h(S12) = 1</br>
+			<strong>f(S12) = g(S12) + h(S12) = 5</strong>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 7</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Puzzle_8-7.png" width="80%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> = (S1-4) (S3-4) (S5-5) (S6-5) (S10-6) (S12-5)</br></br>
+  			<strong>LA</strong> = (S13-5) (S2-6) (S4-6) (S7-6) (S8-6) (S9-7) (S11-7) (S14-7)</td>
+		<td>g(S13) = 5</br>
+  			h(S13) = 0</br>
+			<strong>f(S13) = g(S13) + h(S13) = 5</strong></br></br>
+			g(S14) = 5</br>
+  			h(S14) = 2</br>
+			<strong>f(S14) = g(S14) + h(S14) = 7</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 8</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Puzzle_8-8.png" width="80%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> = (S1-4) (S3-4) (S5-5) (S6-5) (S10-6) (S12-5) <strong style="color:green">(S13-5)</strong></br></br>
+  			<strong>LA</strong> = (S2-6) (S4-6) (S7-6) (S8-6) (S9-7) (S11-7) (S14-7)</td>
+		<td><strong style="color:green">S13 = OBJETIVO</strong></td>
+	</tr>
+</table><p>&nbsp;</p><p><span>Finalmente, nos encontramos con que el nodo de menor </span><strong><span>𝑓(s)</span></strong><span> es meta, por lo que detenemos el algoritmo y recuperamos la solución subiendo por los punteros a los nodos padre.</span></p><ul><li><p><strong><span>Camino final</span></strong><span>: (S1) (S3) (S6) (S10) (S12) (S13)</span></p></li></ul><p>&nbsp;</p><h3 id='ejercicio-6'><span>Ejercicio 6</span></h3><h4 id='se-quiere-encontrar-la-más-corta-desde-arad-a-bucarest-utilizando-para-ello-un-algoritmo-de-primero-el-mejor'><span>Se quiere encontrar la más corta desde Arad a Bucarest utilizando para ello un algoritmo de primero el mejor.</span></h4><p>&nbsp;</p><p><img src="images/Mapa_Rumania.png" alt="Mapa_Rumania" style="zoom:50%;" /></p><p>&nbsp;</p><ul><li><p><strong><span>Heurística</span></strong><span>: distancia en línea recta desde las ciudades a Bucarest.</span></p></li></ul><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="4"><center>Valores heurísticos <i>h(s)</i></center></th>
+	</tr>    
+    <tr>
+  	<td><strong>Arad</strong></td>
+		<td>366</td>
+    	<td><strong>Pitesti</strong></td>
+		<td>100</td>
+	</tr>
+    <tr>
+  	<td><strong>Oradea</strong></td>
+		<td>380</td>
+    	<td><strong>Rimnicu Vicea</strong></td>
+		<td>193</td>
+	</tr>
+    <tr>
+  	<td><strong>Craiova</strong></td>
+		<td>160</td>
+    	<td><strong>Sibiu</strong></td>
+		<td>253</td>
+	</tr>
+    <tr>
+  	<td><strong>Drobeta</strong></td>
+		<td>242</td>
+    	<td><strong>Timisoara</strong></td>
+		<td>329</td>
+	</tr>
+    <tr>
+  	<td><strong>Fagaras</strong></td>
+		<td>176</td>
+    	<td><strong>Lugoj</strong></td>
+		<td>244</td>
+	</tr>
+    <tr>
+  	<td><strong>Vaslui</strong></td>
+		<td>199</td>
+    	<td><strong>Mehadia</strong></td>
+		<td>241</td>
+	</tr>
+	<tr>
+  	<td><strong>Zerind</strong></td>
+		<td>374</td>
+    	<td><strong>Bucarest</strong></td>
+		<td>0</td>
+	</tr>
+</table><p>&nbsp;</p><h5 id='solución-2'><span>Solución</span></h5><h6 id='algoritmo-voraz'><span>Algoritmo voraz</span></h6><ul><li><p><strong><span>Función de evaluación</span></strong><span>: </span><em><span>f(s) = h(s)</span></em></p></li></ul><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 1</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_Voraz_1.png" width="12%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> =</br></br>
+  			<strong>LA</strong> = (Arad-366)</td>
+		<td>h(Arad) = 366</br>
+			<strong>f(Arad) = h(Arad) = 366</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 2</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_Voraz_2.png" width="33%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  <tr>      
+  	<td><strong>LC</strong> = (Arad)</br></br>
+  			<strong>LA</strong> = (Sibiu-253) (Timisoara-329) (Zerind-374)</td>
+		<td>h(Sibiu) = 253</br>
+			<strong>f(Sibiu) = h(Sibiu) = 253</strong></br></br>
+			h(Timisoara) = 329</br>
+			<strong>f(Timisoara) = h(Timisoara) = 329</strong></br></br>
+			h(Zerind) = 374</br>
+			<strong>f(Zerind) = h(Zerind) = 374</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 3</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_Voraz_3.png" width="50%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> = (Arad) (Sibiu)</br></br>
+  			<strong>LA</strong> = (Fagaras-176) (Rimnicu Vicea-193)  (Timisoara-329) (Arad-366) (Zerind-374) (Oradea-380)</td>
+		<td>h(Oradea) = 380</br>
+			<strong>f(Oradea) = h(Oradea) = 380</strong></br></br>
+			h(Rimnicu Vicea) = 193</br>
+			<strong>f(Rimnicu Vicea) = h(Rimnicu Vicea) = 193</strong></br></br>
+			h(Fagaras) = 176</br>
+			<strong>f(Fagaras) = h(Fagaras) = 176</strong></br></br>
+			h(Arad) = 366</br>
+			<strong>f(Arad) = h(Arad) = 366</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 4</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_Voraz_4.png" width="50%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> = (Arad) (Sibiu) (Fagaras)</br></br>
+  			<strong>LA</strong> = (Bucarest-0) (Rimnicu Vicea-193) (Sibiu-253) (Timisoara-329) (Arad-366) (Zerind-374) (Oradea-380)</td>
+		<td>h(Bucarest) = 0</br>
+			<strong>f(Bucarest) = h(Bucarest) = 0</strong></br></br>
+			h(Sibiu) = 253</br>
+			<strong>f(Sibiu) = h(Sibiu) = 253</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 5</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_Voraz_5.png" width="50%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> = (Arad) (Sibiu) (Fagaras) (Bucarest)</br></br>
+  			<strong>LA</strong> = (Rimnicu Vicea-193) (Sibiu-253) (Timisoara-329) (Arad-366) (Zerind-374) (Oradea-380)</td>
+		<td><strong style="color:green">Bucarest = OBJETIVO</br></br>
+				CAMINO = (Arad) (Sibiu) (Fagaras) (Bucarest)</strong></td>
+	</tr>
+</table><p><span>Con el </span><strong><span>algoritmo voraz</span></strong><span> hemos encontrado un camino de Arad a Bucarest, </span><strong style="color:red"><span>¡pero no el más corto!</span></strong></p><p>&nbsp;</p><h6 id='algoritmo-a'><span>Algoritmo A*</span></h6><ul><li><p><strong><span>Función de evaluación</span></strong><span>: </span><em><span>f(s) = g(s) + h(s)</span></em></p></li><li><p><em><strong><span>g(s)</span></strong></em><span> = coste de llegar desde el estado inicial hasta dicho estado.</span></p></li></ul><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 1</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_A_Estrella_1.png" width="12%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> =</br></br>
+  			<strong>LA</strong> = (Arad-366)</td>
+		<td>g(Arad) = 0</br>
+      h(Arad) = 366</br>
+			<strong>f(Arad) = 0 + 366 = 366</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 2</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_A_Estrella_2.png" width="50%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  <tr>      
+  	<td><strong>LC</strong> = (Arad)</br></br>
+  			<strong>LA</strong> = (Sibiu-393) (Timisoara-447) (Zerind-449)</td>
+		<td>g(Sibiu) = 140</br>
+			h(Sibiu) = 253</br>
+			<strong>f(Sibiu) = 140 + 253 = 393</strong></br></br>
+			g(Timisoara) = 118</br>
+			h(Timisoara) = 329</br>
+			<strong>f(Timisoara) = 118 + 329 = 447</strong></br></br>
+			g(Zerind) = 75</br>
+			h(Zerind) = 374</br>
+			<strong>f(Zerind) = 75 + 374 = 449</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 3</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_A_Estrella_3.png" width="75%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> = (Arad) (Sibiu)</br></br>
+  			<strong>LA</strong> = (Rimnicu Vicea-413) (Fagaras-415) (Timisoara-447) (Zerind-449) (Arad-646) (Oradea-671)</td>
+		<td>g(Oradea) = 291</br>
+            h(Oradea) = 380</br>
+			<strong>f(Oradea) = 291 + 380 = 671</strong></br></br>
+			g(Rimnicu Vicea) = 220</br>
+			h(Rimnicu Vicea) = 193</br>
+			<strong>f(Rimnicu Vicea) = 220 + 193 = 413</strong></br></br>
+			g(Fagaras) = 239</br>
+			h(Fagaras) = 176</br>
+			<strong>f(Fagaras) = 239 + 176 = 415</strong></br></br>
+			g(Arad) = 280</br>
+      h(Arad) = 366</br>
+			<strong>f(Arad) = 280 + 366 = 646</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 4</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_A_Estrella_4.png" width="75%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> = (Arad) (Sibiu) (Rimnicu Vicea)</br></br>
+  			<strong>LA</strong> = (Fagaras-415) (Pitesti-417) (Timisoara-447) (Zerind-449) (Craiova-526) (Sibiu-553) (Arad-646) (Oradea-671)</td>
+		<td>g(Pitesti) = 317</br>
+			h(Pitesti) = 100</br>
+			<strong>f(Pitesti) = 317 + 100 = 417</strong></br></br>
+			g(Craiova) = 366</br>
+			h(Craiova) = 160</br>
+			<strong>f(Craiova) = 366 + 160 = 526</strong></br></br>
+			g(Sibiu) = 300</br>
+			h(Sibiu) = 253</br>
+			<strong>f(Sibiu) = 300 + 253 = 553</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 5</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_A_Estrella_5.png" width="75%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> = (Arad) (Sibiu) (Rimnicu Vicea) (Fagaras)</br></br>
+  			<strong>LA</strong> = (Pitesti-417) (Timisoara-447) (Zerind-449) (Bucarest-450) (Craiova-526) (Sibiu-553) (Sibiu-591) (Arad-646) (Oradea-671)</td>
+	<td>g(Bucarest) = 450</br>
+		h(Bucarest) = 0</br>
+		<strong>f(Bucarest) = 450 + 0 = 450</strong></br></br>
+		g(Sibiu) = 338</br>
+		h(Sibiu) = 253</br>
+		<strong>f(Sibiu) = 338 + 253 = 591</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 6</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_A_Estrella_6.png" width="75%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> = (Arad) (Sibiu) (Rimnicu Vicea) (Fagaras) (Pitesti)</br></br>
+  			<strong>LA</strong> = (Bucarest-418) (Timisoara-447) (Zerind-449) (Bucarest-450) (Craiova-526) (Sibiu-553) (Sibiu-591) (Rimnicu Vicea-607) (Craiova-615) (Arad-646) (Oradea-671)</td>
+		<td>g(Bucarest) = 418</br>
+      h(Bucarest) = 0</br>
+			<strong>f(Bucarest) = 418 + 0 = 418</strong></br></br>
+			g(Craiova) = 455</br>
+			h(Craiova) = 160</br>
+			<strong>f(Craiova) = 455 + 160 = 615</strong></br></br>
+			g(Rimnicu Vicea) = 414</br>
+			h(Rimnicu Vicea) = 193</br>
+			<strong>f(Rimnicu Vicea) = 414 + 193 = 607</strong></td>
+	</tr>
+</table><p>&nbsp;</p><table>
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th style="color:#FFFFFF" colspan="2"><center>Iteración 7</center></th>
+	</tr>
+  <tr style="background-color: rgb(0, 147, 255);">  
+    <th style="color:#FFFFFF" colspan="2"><center>Árbol</center></th>
+    </tr> 
+  <tr>
+     <td colspan="2"><center><img src="images/Solucion_Rumania_A_Estrella_7.png" width="75%"></center></td>
+	</tr>    
+  <tr style="background-color: rgb(0, 147, 255);">
+    <th width="50%" style="color:#FFFFFF"><center>Listas</center></th>	
+		<th width="50%" style="color:#FFFFFF"><center>Heuristicas</center></th>
+	</tr>
+  <tr>
+  	<td><strong>LC</strong> = (Arad) (Sibiu) (Rimnicu Vicea) (Fagaras) (Pitesti) (Bucarest)</br></br>
+  			<strong>LA</strong> = (Timisoara-447) (Zerind-449) (Bucarest-450) (Craiova-526) (Sibiu-553) (Sibiu-591 (Rimnicu Vicea-607) (Craiova-615) (Arad-646) (Oradea-671)</td>
+    <td><strong style="color:green">Bucarest = OBJETIVO</br></br>
+				CAMINO = (Arad) (Sibiu) (Rimnicu Vicea) (Pitesti) (Bucarest)</strong></td>
+	</tr>
+</table><p>&nbsp;</p></div></div>
+</body>
+</html>
